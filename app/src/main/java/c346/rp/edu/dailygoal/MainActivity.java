@@ -1,6 +1,8 @@
 package c346.rp.edu.dailygoal;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,6 +21,9 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup time;
     RadioGroup attempt ;
     EditText reflection ;
+
+
+
 
 
 
@@ -48,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                     timeAnswer = (RadioButton)findViewById(timeAnswerId);
                     attemptAnswer = (RadioButton)findViewById(attemptAnswerId);
 
+
+
+
+                    //intent method
                     String[] info = {materialAnswer.getText().toString(), timeAnswer.getText().toString(), attemptAnswer.getText().toString(), reflection.getText().toString()};
                     Intent i = new Intent(MainActivity.this, Display.class);
                     i.putExtra("Info", info);
