@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">DailyGoal</string>
+    <string name="app_name">ProblemStatement</string>
+    <string name="achieve">Did I achieve this goal today?</string>
 </resources>
